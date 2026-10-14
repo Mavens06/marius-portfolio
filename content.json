@@ -1,0 +1,191 @@
+{
+  "projects": [
+    {
+      "id": "agribotics",
+      "title": "Agri-Botics",
+      "category": "Robotique",
+      "year": "2025 — 2026",
+      "subtitle": "Du sol à la décision.",
+      "image": "agri-prototype.webp",
+      "tags": [
+        "Raspberry Pi",
+        "ESP32",
+        "Python",
+        "Machine Learning"
+      ],
+      "description": "Un robot mobile pour explorer une parcelle, acquérir des données du sol et rendre les recommandations agricoles accessibles en français, arabe et darija.",
+      "context": "Projet Learning by Doing à l’École Centrale Casablanca, réalisé en équipe.",
+      "work": "Intégration d’une chaîne robot, acquisition, backend et interface. Inférence agronomique locale, cartographie et recommandations multilingues avec synthèse vocale.",
+      "limits": "Prototype : température et humidité mesurées par capteurs ; pH et conductivité estimés à partir de ces mesures. Le chatbot utilise un service cloud.",
+      "url": "https://github.com/Mavens06/agri-botics-g23",
+      "gallery": [
+        {
+          "src": "agri-prototype.webp",
+          "caption": "Prototype sur la parcelle de démonstration."
+        },
+        {
+          "src": "agri-stand.webp",
+          "caption": "Présentation du projet Agri-Botics au stand."
+        },
+        {
+          "src": "agri-electronique.webp",
+          "caption": "Électronique embarquée du prototype."
+        },
+        {
+          "src": "agribotics-carte.jpg",
+          "caption": "Cartographie — capture de l’interface en mode simulation."
+        },
+        {
+          "src": "agribotics-conseils.jpg",
+          "caption": "Conseils par zone — données simulées."
+        },
+        {
+          "src": "agri-poster.webp",
+          "caption": "Poster de présentation du projet."
+        }
+      ]
+    },
+    {
+      "id": "rentimmo",
+      "title": "RentImmo",
+      "category": "Développement",
+      "year": "Juil. — Août 2026",
+      "subtitle": "Éclairer l’investissement.",
+      "image": "rentimmo.png",
+      "tags": [
+        "Python",
+        "Flask",
+        "Finance",
+        "PDF / Excel"
+      ],
+      "description": "Une application métier qui accompagne le conseil immobilier : du brief investisseur à la comparaison de montages financiers.",
+      "context": "Stage de six semaines chez Choubel Consulting, à Casablanca. Développé avec René Dansou.",
+      "work": "Scénarios de financement, cash-flow, VAN et TRI ; suivi des dossiers ; comparaison d’investissements locatifs et de terrains ; exports PDF et Excel.",
+      "limits": "Les hypothèses de marché et référentiels de prix doivent être validés par le cabinet. Les projections dépendent des données renseignées.",
+      "url": ""
+    },
+    {
+      "id": "pediappend",
+      "title": "PediAppend",
+      "category": "Data & IA",
+      "year": "Mars 2026",
+      "subtitle": "Une IA qui s’explique.",
+      "image": "pediappend-interface.jpg",
+      "tags": [
+        "Random Forest",
+        "SHAP",
+        "Flask",
+        "scikit-learn"
+      ],
+      "description": "Un prototype d’aide au diagnostic d’appendicite pédiatrique, où chaque prédiction peut être expliquée.",
+      "context": "Coding Week à l’École Centrale Casablanca. Travail en équipe de six, avec collaboration sur Git.",
+      "work": "Comparaison de modèles, sélection orientée rappel, interface Flask multi-étapes et visualisations SHAP pour comprendre les facteurs d’une prédiction.",
+      "limits": "Projet académique évalué sur un jeu de données. Aucune validation clinique ni utilisation comme dispositif médical.",
+      "url": "https://github.com/Mavens06/Coding-week-project",
+      "gallery": [
+        {
+          "src": "pediappend-interface.jpg",
+          "caption": "Résultat sur un cas fictif — prototype académique."
+        },
+        {
+          "src": "pediappend-shap.jpg",
+          "caption": "Explication SHAP capturée dans l’application locale."
+        }
+      ]
+    },
+    {
+      "id": "forex",
+      "title": "FOREX acoustique",
+      "category": "Recherche",
+      "year": "Mai 2026",
+      "subtitle": "Comprendre ce que le son traverse.",
+      "image": "acoustique-labo.webp",
+      "tags": [
+        "Expérimentation",
+        "Acoustique",
+        "Analyse de données"
+      ],
+      "description": "Une étude expérimentale de l’atténuation et de la résonance acoustiques dans différents matériaux.",
+      "context": "Projet académique à l’École Centrale Casablanca.",
+      "work": "Mesures expérimentales, analyse des coefficients d’atténuation et confrontation des observations aux modèles théoriques.",
+      "limits": "Résultats liés au montage expérimental et aux matériaux étudiés.",
+      "url": "",
+      "gallery": [
+        {
+          "src": "acoustique-labo.webp",
+          "caption": "Montage expérimental en laboratoire."
+        },
+        {
+          "src": "acoustique-signal.webp",
+          "caption": "Observation des signaux à l’oscilloscope."
+        },
+        {
+          "src": "acoustique.jpg",
+          "caption": "Dispositif de mesure acoustique."
+        }
+      ]
+    },
+    {
+      "id": "composites",
+      "title": "Composites aéronautiques",
+      "category": "Recherche",
+      "year": "Août 2025",
+      "subtitle": "Explorer les limites du matériau.",
+      "image": "",
+      "tags": [
+        "Mécanique",
+        "Matériaux",
+        "Aéronautique"
+      ],
+      "description": "Un mémoire de licence consacré aux mécanismes de défaillance et aux critères de rupture des composites aéronautiques.",
+      "context": "IMSP, Université d’Abomey-Calavi, Bénin.",
+      "work": "Analyse du comportement mécanique, étude des critères de rupture et essais expérimentaux de flexion trois points.",
+      "limits": "Travail scientifique de licence ; les résultats ne constituent pas une qualification industrielle.",
+      "url": ""
+    }
+  ],
+  "demos": [
+    {
+      "id": "robot",
+      "project": "agribotics",
+      "title": "Le robot en mouvement",
+      "label": "Agri-Botics · Prototype réel",
+      "duration": "24 s",
+      "src": "agribotics-robot.mp4",
+      "poster": "agribotics-robot-poster.jpg",
+      "caption": "Extrait de la vidéo du prototype fournie avec le projet. Essai de déplacement en intérieur, sans bande sonore."
+    },
+    {
+      "id": "rentimmo",
+      "project": "rentimmo",
+      "title": "Comparer les scénarios",
+      "label": "RentImmo · Application métier",
+      "duration": "36 s",
+      "src": "rentimmo-demo.mp4",
+      "poster": "rentimmo-demo-poster.jpg",
+      "caption": "Extrait de l’enregistrement de démonstration RentImmo : comparaison de montages financiers. Données fictives du jeu de démonstration."
+    },
+    {
+      "id": "pediappend",
+      "project": "pediappend",
+      "title": "De la saisie à l’explication",
+      "label": "PediAppend · Captures de l’application",
+      "duration": "20 s",
+      "src": "pediappend-parcours.mp4",
+      "poster": "pediappend-interface.jpg",
+      "track": "pediappend-parcours.vtt",
+      "caption": "Montage de captures réalisées dans l’application locale : formulaire, résultat et explication SHAP. Cas entièrement fictif ; prototype académique sans validation clinique."
+    },
+    {
+      "id": "agri-interface",
+      "project": "agribotics",
+      "title": "Du terrain aux recommandations",
+      "label": "Agri-Botics · Interface de simulation",
+      "duration": "15 s",
+      "src": "agribotics-interface.mp4",
+      "poster": "agribotics-carte.jpg",
+      "track": "agribotics-interface.vtt",
+      "caption": "Montage de captures réalisées dans la version de simulation : mission, cartographie et recommandations. Les mesures affichées sont simulées."
+    }
+  ]
+}
