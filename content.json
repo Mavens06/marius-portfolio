@@ -151,7 +151,7 @@
       "title": "Le robot en mouvement",
       "label": "Agri-Botics · Prototype réel",
       "duration": "24 s",
-      "src": "agribotics-robot.mp4",
+      "src": "agribotics-robot.webm",
       "poster": "agribotics-robot-poster.jpg",
       "caption": "Extrait de la vidéo du prototype fournie avec le projet. Essai de déplacement en intérieur, sans bande sonore."
     },
@@ -161,7 +161,7 @@
       "title": "Comparer les scénarios",
       "label": "RentImmo · Application métier",
       "duration": "36 s",
-      "src": "rentimmo-demo.mp4",
+      "src": "rentimmo-demo.webm",
       "poster": "rentimmo-demo-poster.jpg",
       "caption": "Extrait de l’enregistrement de démonstration RentImmo : comparaison de montages financiers. Données fictives du jeu de démonstration."
     },
@@ -171,7 +171,7 @@
       "title": "De la saisie à l’explication",
       "label": "PediAppend · Captures de l’application",
       "duration": "20 s",
-      "src": "pediappend-parcours.mp4",
+      "src": "pediappend-parcours.webm",
       "poster": "pediappend-interface.jpg",
       "track": "pediappend-parcours.vtt",
       "caption": "Montage de captures réalisées dans l’application locale : formulaire, résultat et explication SHAP. Cas entièrement fictif ; prototype académique sans validation clinique."
@@ -182,7 +182,7 @@
       "title": "Du terrain aux recommandations",
       "label": "Agri-Botics · Interface de simulation",
       "duration": "15 s",
-      "src": "agribotics-interface.mp4",
+      "src": "agribotics-interface.webm",
       "poster": "agribotics-carte.jpg",
       "track": "agribotics-interface.vtt",
       "caption": "Montage de captures réalisées dans la version de simulation : mission, cartographie et recommandations. Les mesures affichées sont simulées."
