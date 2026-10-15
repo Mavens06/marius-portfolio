@@ -13,10 +13,10 @@
         "Python",
         "Machine Learning"
       ],
-      "description": "Un robot mobile pour explorer une parcelle, acquérir des données du sol et rendre les recommandations agricoles accessibles en français, arabe et darija.",
-      "context": "Projet Learning by Doing à l’École Centrale Casablanca, réalisé en équipe.",
+      "description": "Concevoir un robot agricole et toute sa chaîne logicielle : planifier des points de mesure, suivre une mission, représenter les variations du sol et proposer des cultures adaptées à chaque zone.",
+      "context": "Projet Learning by Doing de l’École Centrale Casablanca, mené en équipe. Le problème de départ est concret : une parcelle n’est pas homogène. Une moyenne globale masque les différences entre zones et ne suffit pas pour choisir où planter ou intervenir.",
       "work": "Intégration d’une chaîne robot, acquisition, backend et interface. Inférence agronomique locale, cartographie et recommandations multilingues avec synthèse vocale.",
-      "limits": "Prototype : température et humidité mesurées par capteurs ; pH et conductivité estimés à partir de ces mesures. Le chatbot utilise un service cloud.",
+      "limits": "La démonstration présentée utilise des valeurs simulées. Le rapport distingue les essais du robot de la validation complète en simulation ; l’intégration et la calibration de la chaîne physique restent à consolider. Le pH et la conductivité affichés ne constituent pas des mesures directes de capteurs dans cette démonstration. Les recommandations ne valent pas validation agronomique sur le terrain.",
       "url": "https://github.com/Mavens06/agri-botics-g23",
       "gallery": [
         {
@@ -43,7 +43,33 @@
           "src": "agri-poster.webp",
           "caption": "Poster de présentation du projet."
         }
-      ]
+      ],
+      "overview": "Du mécanisme de sonde à l’interface multilingue, le projet relie mécanique, électronique et agronomie. La démonstration permet de suivre une mission complète en simulation ; les essais du prototype explorent le déplacement et la descente de la sonde.",
+      "challenge": "Construire une chaîne compréhensible pour l’utilisateur : choisir les points, acquérir des valeurs, localiser les écarts et transformer les résultats en recommandations lisibles.",
+      "role": "Contribution à un projet collectif associant conception mécanique, électronique embarquée, agronomie et développement logiciel. Le rapport joint est signé par l’équipe ; il présente les réalisations communes.",
+      "steps": [
+        {
+          "title": "Concevoir le prélèvement",
+          "text": "L’équipe a fait évoluer le concept initial vers une sonde verticale. La CAO et les pièces imprimées en PETG matérialisent l’intégration sur le châssis ; les moteurs et la commande doivent coordonner déplacement et descente de la sonde."
+        },
+        {
+          "title": "Relier le robot et les données",
+          "text": "L’architecture sépare le pilotage embarqué, le serveur de mission et l’interface. Un plan de points devient une séquence déplacement, stabilisation, acquisition et transmission des résultats."
+        },
+        {
+          "title": "Rendre le résultat exploitable",
+          "text": "Une carte restitue les paramètres zone par zone. Un modèle de recommandation et des règles agronomiques produisent des propositions de cultures ; l’interface et l’assistant visent le français, l’arabe et la darija."
+        }
+      ],
+      "outcome": "Une chaîne logicielle complète démontrée en simulation, un prototype mécanique et des essais de pilotage. Le rapport documente aussi les arbitrages de conception et les validations encore nécessaires pour une mission réelle de bout en bout.",
+      "takeaway": "Relier un prototype physique à une interface de décision, en explicitant ce qui est mesuré, simulé et encore à valider.",
+      "report": {
+        "file": "rapport-agribotics.pdf",
+        "cover": "rapport-agribotics.webp",
+        "title": "Rapport Agri-Botics",
+        "kind": "Rapport collectif · 33 pages",
+        "note": "Conception, architecture, recommandations et validation du prototype."
+      }
     },
     {
       "id": "rentimmo",
@@ -58,11 +84,55 @@
         "Finance",
         "PDF / Excel"
       ],
-      "description": "Une application métier qui accompagne le conseil immobilier : du brief investisseur à la comparaison de montages financiers.",
-      "context": "Stage de six semaines chez Choubel Consulting, à Casablanca. Développé avec René Dansou.",
+      "description": "Développer un outil de conseil immobilier qui transforme le brief d’un investisseur en scénarios comparables : budget, financement, revenus, trésorerie, VAN et TRI, puis restitution PDF ou Excel.",
+      "context": "Stage de six semaines chez Choubel Consulting à Casablanca, du 13 juillet au 21 août 2026, avec René Dansou. Le projet traduit un besoin métier en une application Flask : structurer les dossiers et comparer des opérations sur des hypothèses communes.",
       "work": "Scénarios de financement, cash-flow, VAN et TRI ; suivi des dossiers ; comparaison d’investissements locatifs et de terrains ; exports PDF et Excel.",
-      "limits": "Les hypothèses de marché et référentiels de prix doivent être validés par le cabinet. Les projections dépendent des données renseignées.",
-      "url": ""
+      "limits": "Les référentiels de prix, frais et fiscalité sont des hypothèses de travail à valider avec le cabinet. L’application ne vérifie pas l’endettement et les revenus de l’investisseur ; certaines opérations sur plan sont simplifiées. Les écrans du portfolio utilisent des données fictives.",
+      "url": "",
+      "overview": "Le parcours suit le travail du conseiller : comprendre la demande, étudier un bien, construire plusieurs montages et expliquer leurs différences. L’objectif est de rendre les calculs utilisables pendant un échange avec un client.",
+      "challenge": "Passer d’un calcul de rendement isolé à une étude cohérente, qui tient compte du financement, des frais, de la fiscalité, de l’objectif et de l’horizon d’investissement.",
+      "role": "Avec René Dansou, j’ai développé l’application. Mon rapport de stage décrit notamment mon travail sur la fiabilité des calculs, la résolution des difficultés de convergence du TRI et la simplification du parcours conseiller.",
+      "steps": [
+        {
+          "title": "Cadrer les conventions",
+          "text": "Définir les hypothèses et les conventions financières avant de coder : coût d’entrée, calendrier des flux, frais, financement et revente. Ces choix rendent les indicateurs comparables et leurs limites explicables."
+        },
+        {
+          "title": "Construire un moteur indépendant",
+          "text": "Le calcul financier est séparé de Flask. La VAN, le TRI, les rendements et le cash-flow sont contrôlés indépendamment de l’interface, avec des vérifications manuelles et des tests du moteur."
+        },
+        {
+          "title": "Accompagner la décision",
+          "text": "Le conseiller renseigne le brief, le bien et les variantes. L’étude automatique construit des montages plausibles, les compare selon l’objectif déclaré, puis présente leurs atouts et points de vigilance. Les exports PDF et Excel permettent de restituer l’étude."
+        }
+      ],
+      "outcome": "Une application couvrant le dossier client, les scénarios locatifs ou de terrain/revente, les comparaisons et les exports. Le rapport final annonce 96 tests à la remise ; ce nombre décrit cette version du projet, pas un audit financier indépendant.",
+      "takeaway": "La qualité d’un outil de calcul dépend autant des conventions et de leur restitution que des formules elles-mêmes.",
+      "report": {
+        "file": "rapport-rentimmo-public.pdf",
+        "cover": "rapport-rentimmo-public.webp",
+        "title": "Rapport RentImmo — extrait public",
+        "kind": "Rapport collectif · 7 pages",
+        "note": "Pages 1–3 et 5–8 du rapport original. La page consacrée aux opérations du cabinet n’est pas publiée."
+      },
+      "gallery": [
+        {
+          "src": "rentimmo.png",
+          "caption": "Comparaison de scénarios dans le jeu de démonstration RentImmo."
+        },
+        {
+          "src": "rentimmo-demo-poster.jpg",
+          "caption": "Lecture d’un montage financier — données fictives."
+        },
+        {
+          "src": "rentimmo-export-1.webp",
+          "caption": "Exemple d’export PDF de démonstration, page 1."
+        },
+        {
+          "src": "rentimmo-export-2.webp",
+          "caption": "Exemple d’export PDF de démonstration, page 2."
+        }
+      ]
     },
     {
       "id": "pediappend",
@@ -77,10 +147,10 @@
         "Flask",
         "scikit-learn"
       ],
-      "description": "Un prototype d’aide au diagnostic d’appendicite pédiatrique, où chaque prédiction peut être expliquée.",
-      "context": "Coding Week à l’École Centrale Casablanca. Travail en équipe de six, avec collaboration sur Git.",
+      "description": "Construire un prototype d’apprentissage automatique explicable : préparer des données pédiatriques, comparer plusieurs modèles, privilégier le rappel et afficher les facteurs qui contribuent à chaque prédiction.",
+      "context": "Projet collectif de Coding Week à l’École Centrale Casablanca en mars 2026. Le travail utilise le jeu de données Regensburg Pediatric Appendicitis et explore une chaîne complète : préparation, entraînement, évaluation, explication et interface Flask.",
       "work": "Comparaison de modèles, sélection orientée rappel, interface Flask multi-étapes et visualisations SHAP pour comprendre les facteurs d’une prédiction.",
-      "limits": "Projet académique évalué sur un jeu de données. Aucune validation clinique ni utilisation comme dispositif médical.",
+      "limits": "Projet académique, sans validation clinique externe. Les performances documentées portent sur un seul jeu de données et son découpage ; elles ne prouvent pas une généralisation à d’autres populations. Le prototype ne doit pas servir à prendre une décision médicale.",
       "url": "https://github.com/Mavens06/Coding-week-project",
       "gallery": [
         {
@@ -91,7 +161,26 @@
           "src": "pediappend-shap.jpg",
           "caption": "Explication SHAP capturée dans l’application locale."
         }
-      ]
+      ],
+      "overview": "Le projet relie une démarche de data science à une interface utilisable. Un formulaire en plusieurs étapes conduit au résultat du modèle, puis à une visualisation SHAP qui détaille les contributions des variables.",
+      "challenge": "Évaluer un modèle au-delà de son seul taux de bonnes réponses. L’équipe a retenu une sélection orientée rappel, puis cherché à rendre les prédictions inspectables plutôt qu’à afficher uniquement une classe.",
+      "role": "Participation au projet collectif de Coding Week. La présentation ci-dessous décrit le travail de l’équipe et les fonctionnalités documentées dans le dépôt.",
+      "steps": [
+        {
+          "title": "Préparer les données",
+          "text": "Traiter les valeurs manquantes, encoder les variables et préparer les caractéristiques utilisées par les modèles. Le pipeline organise les transformations pour que l’application fournisse les mêmes entrées que lors de l’entraînement."
+        },
+        {
+          "title": "Comparer et expliquer",
+          "text": "Comparer SVM, Random Forest, LightGBM et CatBoost selon plusieurs métriques. Random Forest est retenu dans le dépôt pour son rappel sur le découpage étudié. SHAP permet ensuite d’illustrer la contribution des variables à une prédiction."
+        },
+        {
+          "title": "Construire le parcours",
+          "text": "Un formulaire multi-étapes recueille les informations du cas, calcule certaines caractéristiques et affiche le résultat accompagné de son explication. L’authentification et l’historique organisent la consultation des cas dans le prototype."
+        }
+      ],
+      "outcome": "Un pipeline de modélisation, des artefacts de modèle sauvegardés et une application Flask avec résultat expliqué. Le dépôt documente les comparaisons et les tests. Les captures de ce portfolio utilisent uniquement un cas fictif.",
+      "takeaway": "Un résultat chiffré doit toujours être accompagné de son protocole d’évaluation, d’une explication et de ses limites."
     },
     {
       "id": "forex",
@@ -105,10 +194,10 @@
         "Acoustique",
         "Analyse de données"
       ],
-      "description": "Une étude expérimentale de l’atténuation et de la résonance acoustiques dans différents matériaux.",
-      "context": "Projet académique à l’École Centrale Casablanca.",
+      "description": "Étudier expérimentalement la propagation, l’atténuation et la résonance acoustiques : concevoir un montage, mesurer les signaux, comparer des matériaux et discuter les écarts avec les modèles physiques.",
+      "context": "Projet académique FOREX à l’École Centrale Casablanca, réalisé dans le sous-groupe 46. La démarche part de modèles physiques puis les confronte à des mesures de laboratoire.",
       "work": "Mesures expérimentales, analyse des coefficients d’atténuation et confrontation des observations aux modèles théoriques.",
-      "limits": "Résultats liés au montage expérimental et aux matériaux étudiés.",
+      "limits": "Les valeurs obtenues sont propres au dispositif et aux échantillons étudiés. Elles ne constituent ni une certification d’isolation acoustique ni une performance garantie dans un bâtiment.",
       "url": "",
       "gallery": [
         {
@@ -123,7 +212,33 @@
           "src": "acoustique.jpg",
           "caption": "Dispositif de mesure acoustique."
         }
-      ]
+      ],
+      "overview": "Le travail combine trois approches : observer la propagation en fonction de la distance et de la fréquence, comparer l’affaiblissement introduit par des matériaux et étudier les ondes stationnaires dans un tube de Kundt.",
+      "challenge": "Séparer ce qui relève du matériau de ce qui dépend du montage : fréquence, position des capteurs, réflexions, bruit et répétabilité des mesures influencent tous l’interprétation.",
+      "role": "Contribution au travail expérimental collectif du sous-groupe 46, coauteur du rapport présenté. Le document rassemble le protocole, les résultats et leur discussion.",
+      "steps": [
+        {
+          "title": "Formuler les hypothèses",
+          "text": "Mobiliser la propagation des ondes, l’atténuation et la résonance pour prévoir les tendances attendues. Choisir des grandeurs observables et préciser les conditions de comparaison."
+        },
+        {
+          "title": "Réaliser les expériences",
+          "text": "Relever les signaux selon la distance et la fréquence, puis avec et sans matériau. Un tube de Kundt complète l’étude par l’observation des ondes stationnaires et de leurs positions caractéristiques."
+        },
+        {
+          "title": "Analyser les écarts",
+          "text": "Calculer l’affaiblissement, comparer les comportements et confronter les courbes aux modèles. La discussion porte aussi sur les incertitudes, les réflexions et les limites de la loi de masse comme première approximation."
+        }
+      ],
+      "outcome": "Un protocole documenté, des résultats issus de trois expériences et une discussion des effets de la fréquence, du matériau et des associations de couches. Le rapport complet permet de consulter les courbes et les incertitudes.",
+      "takeaway": "Une mesure ne devient un résultat scientifique qu’avec un protocole, une comparaison et une discussion des incertitudes.",
+      "report": {
+        "file": "rapport-forex.pdf",
+        "cover": "rapport-forex.webp",
+        "title": "Rapport FOREX acoustique",
+        "kind": "Rapport collectif · 18 pages",
+        "note": "Protocoles, résultats, discussion et incertitudes des trois expériences."
+      }
     },
     {
       "id": "composites",
@@ -141,7 +256,22 @@
       "context": "IMSP, Université d’Abomey-Calavi, Bénin.",
       "work": "Analyse du comportement mécanique, étude des critères de rupture et essais expérimentaux de flexion trois points.",
       "limits": "Travail scientifique de licence ; les résultats ne constituent pas une qualification industrielle.",
-      "url": ""
+      "url": "",
+      "overview": "Ce mémoire de licence relie le comportement mécanique des composites aux mécanismes qui conduisent à leur rupture, avec un intérêt particulier pour les applications aéronautiques.",
+      "challenge": "Comprendre comment la structure du matériau et les sollicitations influencent la défaillance, puis interpréter ce qu’un essai permet réellement de conclure.",
+      "role": "Travail de mémoire de licence à l’IMSP, Université d’Abomey-Calavi.",
+      "steps": [
+        {
+          "title": "Étudier les mécanismes",
+          "text": "Analyser le comportement mécanique des composites et les différents modes de défaillance."
+        },
+        {
+          "title": "Relier théorie et essai",
+          "text": "Étudier les critères de rupture et l’apport des essais de flexion trois points à la compréhension du comportement."
+        }
+      ],
+      "outcome": "Un travail de synthèse scientifique reliant mécanique, matériaux et expérimentation. Le mémoire complet n’est pas encore joint à cette sélection de documents.",
+      "takeaway": "Identifier les mécanismes et le domaine de validité d’un modèle avant de conclure sur la tenue d’une structure."
     }
   ],
   "demos": [
@@ -169,23 +299,31 @@
       "id": "pediappend",
       "project": "pediappend",
       "title": "De la saisie à l’explication",
-      "label": "PediAppend · Captures de l’application",
-      "duration": "20 s",
-      "src": "pediappend-parcours.webm",
-      "poster": "pediappend-interface.jpg",
-      "track": "pediappend-parcours.vtt",
-      "caption": "Montage de captures réalisées dans l’application locale : formulaire, résultat et explication SHAP. Cas entièrement fictif ; prototype académique sans validation clinique."
+      "label": "PediAppend · Navigation enregistrée",
+      "duration": "1 min 24",
+      "src": "pediappend-navigation.webm",
+      "poster": "pediappend-navigation.jpg",
+      "caption": "Enregistrement continu de l’application locale : examens fictifs, résultat et explication SHAP. Prototype académique sans validation clinique."
     },
     {
       "id": "agri-interface",
       "project": "agribotics",
       "title": "Du terrain aux recommandations",
-      "label": "Agri-Botics · Interface de simulation",
-      "duration": "15 s",
-      "src": "agribotics-interface.webm",
-      "poster": "agribotics-carte.jpg",
-      "track": "agribotics-interface.vtt",
-      "caption": "Montage de captures réalisées dans la version de simulation : mission, cartographie et recommandations. Les mesures affichées sont simulées."
+      "label": "Agri-Botics · Simulation enregistrée",
+      "duration": "1 min 34",
+      "src": "agribotics-navigation.webm",
+      "poster": "agribotics-navigation.jpg",
+      "caption": "Enregistrement continu de la simulation locale : préparation de mission, cartographie et recommandations. Les mesures sont simulées."
+    },
+    {
+      "id": "rentimmo-navigation",
+      "project": "rentimmo",
+      "title": "Explorer un budget de recherche",
+      "label": "RentImmo · Navigation enregistrée",
+      "duration": "1 min",
+      "src": "rentimmo-navigation.webm",
+      "poster": "rentimmo-navigation.jpg",
+      "caption": "Enregistrement continu de l’application locale : dossier fictif, simulation de marché et variation du budget. Les prix indicatifs ne sont pas validés par le cabinet."
     }
   ]
 }
