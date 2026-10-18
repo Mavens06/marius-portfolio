@@ -194,10 +194,10 @@
         "Acoustique",
         "Analyse de données"
       ],
-      "description": "Étudier expérimentalement la propagation, l’atténuation et la résonance acoustiques : concevoir un montage, mesurer les signaux, comparer des matériaux et discuter les écarts avec les modèles physiques.",
+      "description": "Comprendre comment une onde sonore perd son énergie : propagation dans l’air, isolation par les matériaux et résonance dans un tube de Kundt. Trois expériences pour relier les mécanismes locaux au comportement du système.",
       "context": "Projet académique FOREX à l’École Centrale Casablanca, réalisé dans le sous-groupe 46. La démarche part de modèles physiques puis les confronte à des mesures de laboratoire.",
       "work": "Mesures expérimentales, analyse des coefficients d’atténuation et confrontation des observations aux modèles théoriques.",
-      "limits": "Les valeurs obtenues sont propres au dispositif et aux échantillons étudiés. Elles ne constituent ni une certification d’isolation acoustique ni une performance garantie dans un bâtiment.",
+      "limits": "Le bruit ambiant, les fuites, les réflexions parasites et le placement du microphone limitent les mesures. La décroissance observée dans l’air inclut la divergence géométrique : elle ne mesure pas à elle seule l’absorption intrinsèque de l’air. Les résultats proches du bruit de fond sont discutés avec prudence. Le facteur de qualité Q n’a pas été mesuré, faute de balayage de la largeur des résonances. Il s’agit d’une étude pédagogique, sans certification d’isolation.",
       "url": "",
       "gallery": [
         {
@@ -211,6 +211,14 @@
         {
           "src": "acoustique.jpg",
           "caption": "Dispositif de mesure acoustique."
+        },
+        {
+          "src": "forex-rapport-final.webp",
+          "caption": "Couverture du rapport final SG46 — 42 pages, fourni avec le projet."
+        },
+        {
+          "src": "forex-materiaux-final.webp",
+          "caption": "Figure 4.4 du rapport final : affaiblissement en fonction de la fréquence pour six matériaux, avec incertitudes et réserve sur le bruit de fond."
         }
       ],
       "overview": "Le travail combine trois approches : observer la propagation en fonction de la distance et de la fréquence, comparer l’affaiblissement introduit par des matériaux et étudier les ondes stationnaires dans un tube de Kundt.",
@@ -230,14 +238,19 @@
           "text": "Calculer l’affaiblissement, comparer les comportements et confronter les courbes aux modèles. La discussion porte aussi sur les incertitudes, les réflexions et les limites de la loi de masse comme première approximation."
         }
       ],
-      "outcome": "Un protocole documenté, des résultats issus de trois expériences et une discussion des effets de la fréquence, du matériau et des associations de couches. Le rapport complet permet de consulter les courbes et les incertitudes.",
-      "takeaway": "Une mesure ne devient un résultat scientifique qu’avec un protocole, une comparaison et une discussion des incertitudes.",
+      "outcome": "Un rapport final de 42 pages et une soutenance interactive. Dans le tube de Kundt, les demi-longueurs d’onde mesurées sont de 35,0 ± 1,0 cm à 500 Hz et 17,5 ± 0,9 cm à 1000 Hz, avec un écart d’environ 2 % aux valeurs théoriques. La comparaison des matériaux montre surtout que l’affaiblissement dépend de la fréquence et du montage ; il n’existe pas de classement universel.",
+      "takeaway": "Un système réel se comprend en reliant les phénomènes à plusieurs échelles, puis en séparant les effets physiques recherchés des limites du protocole. Cette démarche nourrit mon intérêt pour les vibrations, l’acoustique et l’ingénierie des systèmes aéronautiques.",
       "report": {
-        "file": "rapport-forex.pdf",
-        "cover": "rapport-forex.webp",
-        "title": "Rapport FOREX acoustique",
-        "kind": "Rapport collectif · 18 pages",
-        "note": "Protocoles, résultats, discussion et incertitudes des trois expériences."
+        "file": "forex-rapport-final.pdf",
+        "cover": "forex-rapport-final.webp",
+        "title": "FOREX — rapport final SG46",
+        "kind": "Rapport collectif final · 42 pages",
+        "note": "Rapport complet : trois expériences, analyse globale, incertitudes et données brutes en annexe."
+      },
+      "presentation": {
+        "file": "forex-soutenance.html",
+        "title": "Explorer la soutenance interactive",
+        "note": "Diapositives, schémas et graphiques de la présentation du groupe SG46."
       }
     },
     {
@@ -286,44 +299,83 @@
       "caption": "Extrait de la vidéo du prototype fournie avec le projet. Essai de déplacement en intérieur, sans bande sonore."
     },
     {
+      "id": "agri-interface",
+      "project": "agribotics",
+      "title": "Du terrain aux recommandations",
+      "label": "Agri-Botics · Simulation filmée",
+      "duration": "56 s",
+      "src": "agri-film-v2.mp4",
+      "poster": "agri-film-v2.jpg",
+      "caption": "Extraits filmés de la simulation locale, avec coupes entre les étapes et sans accélération. Les mesures et recommandations affichées sont simulées.",
+      "track": "agri-film-v2.vtt",
+      "chapters": [
+        {
+          "time": 0,
+          "title": "Planifier"
+        },
+        {
+          "time": 8,
+          "title": "Lancer la mission"
+        },
+        {
+          "time": 40,
+          "title": "Lire la carte"
+        },
+        {
+          "time": 48,
+          "title": "Recommandations"
+        }
+      ]
+    },
+    {
       "id": "rentimmo",
       "project": "rentimmo",
       "title": "Comparer les scénarios",
-      "label": "RentImmo · Application métier",
-      "duration": "36 s",
-      "src": "rentimmo-demo.webm",
-      "poster": "rentimmo-demo-poster.jpg",
-      "caption": "Extrait de l’enregistrement de démonstration RentImmo : comparaison de montages financiers. Données fictives du jeu de démonstration."
+      "label": "RentImmo · Démonstration filmée",
+      "duration": "48 s",
+      "src": "rent-film-v2.mp4",
+      "poster": "rent-film-v2.jpg",
+      "caption": "Extrait continu de la démonstration originale en 1600 × 900 : variantes de financement, sélection puis comparaison des scénarios. Toutes les données de ce jeu sont fictives.",
+      "track": "rent-film-v2.vtt",
+      "chapters": [
+        {
+          "time": 0,
+          "title": "Variantes"
+        },
+        {
+          "time": 20,
+          "title": "Sélection des montages"
+        },
+        {
+          "time": 35,
+          "title": "Comparer"
+        }
+      ]
     },
     {
       "id": "pediappend",
       "project": "pediappend",
       "title": "De la saisie à l’explication",
-      "label": "PediAppend · Navigation enregistrée",
-      "duration": "1 min 24",
-      "src": "pediappend-navigation.webm",
-      "poster": "pediappend-navigation.jpg",
-      "caption": "Enregistrement continu de l’application locale : examens fictifs, résultat et explication SHAP. Prototype académique sans validation clinique."
-    },
-    {
-      "id": "agri-interface",
-      "project": "agribotics",
-      "title": "Du terrain aux recommandations",
-      "label": "Agri-Botics · Simulation enregistrée",
-      "duration": "1 min 34",
-      "src": "agribotics-navigation.webm",
-      "poster": "agribotics-navigation.jpg",
-      "caption": "Enregistrement continu de la simulation locale : préparation de mission, cartographie et recommandations. Les mesures sont simulées."
-    },
-    {
-      "id": "rentimmo-navigation",
-      "project": "rentimmo",
-      "title": "Explorer un budget de recherche",
-      "label": "RentImmo · Navigation enregistrée",
-      "duration": "1 min",
-      "src": "rentimmo-navigation.webm",
-      "poster": "rentimmo-navigation.jpg",
-      "caption": "Enregistrement continu de l’application locale : dossier fictif, simulation de marché et variation du budget. Les prix indicatifs ne sont pas validés par le cabinet."
+      "label": "PediAppend · Cas fictif filmé",
+      "duration": "44 s",
+      "src": "pedi-film-v2.mp4",
+      "poster": "pedi-film-v2.jpg",
+      "caption": "Extraits filmés de PediAppend, raccourcis entre les étapes : valeurs fictives, résultat puis facteurs SHAP. Prototype académique sans validation clinique ; les valeurs SHAP affichées proviennent du modèle et ne constituent pas une explication médicale validée.",
+      "track": "pedi-film-v2.vtt",
+      "chapters": [
+        {
+          "time": 0,
+          "title": "Examens fictifs"
+        },
+        {
+          "time": 12,
+          "title": "Analyser"
+        },
+        {
+          "time": 26,
+          "title": "Résultat & SHAP"
+        }
+      ]
     }
   ]
 }
