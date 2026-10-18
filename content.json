@@ -69,7 +69,13 @@
         "title": "Rapport Agri-Botics",
         "kind": "Rapport collectif · 33 pages",
         "note": "Conception, architecture, recommandations et validation du prototype."
-      }
+      },
+      "domain": "Robotique · Intégration système",
+      "summary": "Relier un robot, une mission et une carte de décision.",
+      "evidence": "Prototype + simulation",
+      "evidence_note": "Essais physiques et chaîne logicielle documentés séparément.",
+      "collaboration": "Projet collectif · Centrale Casablanca",
+      "role_label": "Cadre du travail collectif"
     },
     {
       "id": "rentimmo",
@@ -132,7 +138,13 @@
           "src": "rentimmo-export-2.webp",
           "caption": "Exemple d’export PDF de démonstration, page 2."
         }
-      ]
+      ],
+      "domain": "Logiciel · Modélisation",
+      "summary": "Transformer des calculs financiers en outil de comparaison.",
+      "evidence": "96 tests annoncés",
+      "evidence_note": "Dans le rapport de remise ; ce chiffre ne constitue pas un audit indépendant.",
+      "collaboration": "Développement en binôme · Stage",
+      "role_label": "Mon implication"
     },
     {
       "id": "pediappend",
@@ -180,7 +192,13 @@
         }
       ],
       "outcome": "Un pipeline de modélisation, des artefacts de modèle sauvegardés et une application Flask avec résultat expliqué. Le dépôt documente les comparaisons et les tests. Les captures de ce portfolio utilisent uniquement un cas fictif.",
-      "takeaway": "Un résultat chiffré doit toujours être accompagné de son protocole d’évaluation, d’une explication et de ses limites."
+      "takeaway": "Un résultat chiffré doit toujours être accompagné de son protocole d’évaluation, d’une explication et de ses limites.",
+      "domain": "Data · Explicabilité",
+      "summary": "Rendre une prédiction inspectable, du modèle à l’interface.",
+      "evidence": "4 modèles comparés",
+      "evidence_note": "SVM, Random Forest, LightGBM et CatBoost. Prototype académique.",
+      "collaboration": "Projet collectif · Coding Week",
+      "role_label": "Cadre du travail collectif"
     },
     {
       "id": "forex",
@@ -251,7 +269,13 @@
         "file": "forex-soutenance.html",
         "title": "Explorer la soutenance interactive",
         "note": "Diapositives, schémas et graphiques de la présentation du groupe SG46."
-      }
+      },
+      "domain": "Physique · Expérimentation",
+      "summary": "Confronter les modèles acoustiques aux mesures.",
+      "evidence": "≈ 2 % d’écart",
+      "evidence_note": "Dans le tube de Kundt, par rapport aux demi-longueurs d’onde théoriques.",
+      "collaboration": "Projet collectif · Sous-groupe 46",
+      "role_label": "Cadre du travail collectif"
     },
     {
       "id": "composites",
@@ -284,7 +308,13 @@
         }
       ],
       "outcome": "Un travail de synthèse scientifique reliant mécanique, matériaux et expérimentation. Le mémoire complet n’est pas encore joint à cette sélection de documents.",
-      "takeaway": "Identifier les mécanismes et le domaine de validité d’un modèle avant de conclure sur la tenue d’une structure."
+      "takeaway": "Identifier les mécanismes et le domaine de validité d’un modèle avant de conclure sur la tenue d’une structure.",
+      "domain": "Matériaux · Aéronautique",
+      "summary": "Étudier les mécanismes de rupture des composites.",
+      "evidence": "Mémoire de licence",
+      "evidence_note": "Mécanique, critères de rupture et flexion trois points.",
+      "collaboration": "Mémoire · IMSP, Bénin",
+      "role_label": "Mon implication"
     }
   ],
   "demos": [
